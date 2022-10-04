@@ -12,7 +12,7 @@ jobs:
         run: |
           pip install virtualenv
           virtualenv venv
-          source venv/Scripts/activate
+          source venv/bin/activate
       - name: Installing dependencies
         run: |
           pip install dvc[gs]
