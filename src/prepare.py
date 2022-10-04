@@ -1,4 +1,5 @@
 from dvc import api
+from numpy import int64
 import pandas as pd
 from io import StringIO
 import sys
@@ -24,7 +25,7 @@ fin_data = pd.read_csv(finantial_data_path)
 movie_data = pd.read_csv(movie_data_path)
 opening_data = pd.read_csv(opening_data_path)
 
-numeric_columns_mask = (movie_data.dtypes == float) | (movie_data.dtypes == int)
+numeric_columns_mask = (movie_data.dtypes == float) | (movie_data.dtypes == int64)
 numeric_columns = [columns for columns in numeric_columns_mask.index if numeric_columns_mask[columns]]
 movie_data = movie_data[numeric_columns + ['movie_title']]
 
