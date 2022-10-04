@@ -1,6 +1,6 @@
 import json
 import os 
-from base64 import b64decode, d64decode
+from base64 import b64decode
 
 def main():
     key = os.environ.get('SERVICE_ACCOUNT_KEY')
