@@ -30,8 +30,8 @@ jobs:
            dvc unprotect model/model.pkl
            dvc repro -f 
            echo "Training Completed"
-           dvc add model/model.pkl -r model-tracker --to-remote
-           dvc push model/model.pkl.dvc -r model-tracker
+           dvc add model/model.pkl -r model-track --to-remote
+           dvc push model/model.pkl.dvc -r model-track
       - name: Commit .dvc file changes
         run: |
           git config --local user.email "javier.lora@udea.edu.co"
