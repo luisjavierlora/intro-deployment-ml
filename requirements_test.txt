@@ -1,0 +1,3 @@
+-r api/requierements.txt
+
+pytest == 6.2.5

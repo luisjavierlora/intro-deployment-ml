@@ -1,0 +1,8 @@
+[core]
+    remote = dataset-track
+['remote "dataset-track"']
+    url = gs://ml-deplyment.appspot.com/dataset
+['remote "dataset-track2"']
+    url = gdrive://1pHbroaz8vrXMZOlH9nnbQ6wLnzpR5zCc/dataset
+['remote "model-track"']
+    url = gs://ml-deplyment.appspot.com/model
